@@ -1,6 +1,7 @@
 // We're developing for Java
 plugins {
     java
+    jacoco
 }
 
 // The main package name
@@ -30,4 +31,11 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+tasks.withType<JacocoReport> {
+    reports {
+        xml.required.set(true)
+        html.required.set(false)
+    }
 }
