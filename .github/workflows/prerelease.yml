@@ -21,7 +21,6 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 16
-          distribution: 'adopt'
       # check that gradle is set up with a wrapper correctly
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
