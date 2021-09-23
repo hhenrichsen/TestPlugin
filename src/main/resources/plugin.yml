@@ -1,3 +1,4 @@
 name: TestPlugin
 version: 1.0.0
 main: software.shattered.TestPlugin
+description: Does next to nothing.
